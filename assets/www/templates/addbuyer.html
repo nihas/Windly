@@ -1,0 +1,39 @@
+<ion-view>
+    <div  ng-controller='buyerreg'>
+	<div class="bar bar-header head-col">
+	  <button class="button button-icon bold ion-ios-arrow-thin-left" ui-sref="app.homefirst"></button>
+	  <div class="h1 title bold">ADD A BUYER</div>
+    </div>
+    <ion-content  scroll="false">
+		 <form class="reg-form">
+            <ion-list>
+			<div >
+                <label class="item-input login-input reg-input">
+                    <input type="text" id="name" placeholder="Name">
+                </label>
+                <label class="item-input login-input reg-input">
+                    <input type="text" id="buyername2" placeholder="Buyer 2 Name (Optional)">
+                </label>
+                <label class="item-input login-input reg-input">
+                    <input type="text" id="addressline1" placeholder="Address Line 1">
+                </label>
+                <label class="item-input login-input reg-input">
+                    <input type="text" id="addressline2" placeholder="Address Line 2">
+                </label>	
+                <label class="item-input login-input reg-input">
+                    <input type="text"  id="phone" placeholder="Phone #">
+                </label>
+				 <label class="item-input login-input reg-input">
+                    <input type="email"  id="email" placeholder="Email">
+                </label>
+            </div>
+            </ion-list>
+		 </form>
+
+    </ion-content>
+				<ion-footer-bar class="bar-assertive" >
+				  <p class="title reg-mid1" ng-click="check_credentials()">SAVE</p>
+				</ion-footer-bar>
+    </ion-view>
+</div>
+</ion-view>
